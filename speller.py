@@ -4,8 +4,8 @@ from math import pow
 speller = SpellChecker()
 
 word_length = 8
-letters = ['o', 'a', 'r', 'i', 't', 'c', 'm']
-main_letter = 'm'
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+main_letter = 'b'
 
 word = [letters[0]] * word_length
 
