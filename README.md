@@ -1,4 +1,4 @@
 # speller-bot
-A python script that uses `pyspellchecker` to find words of a specified length, with a specified set of letters. This script was written for use with https://www.nytimes.com/puzzles/spelling-bee.
+A C++ program that uses `nuspell` to find words of a specified length, with a specified set of letters. This script was written for use with https://www.nytimes.com/puzzles/spelling-bee.
 
-To run the script, simply edit the list of letters at the beginning of the file, then run it using the command line.
+To run the program, compile using cmake and run with the parameters `./speller <7-character bank> <main character> <word length>`.
