@@ -1,5 +1,4 @@
 #include <cmath>
-#include <string>
 #include <stdio.h>
 #include <nuspell/dictionary.hxx>
 #include <nuspell/finder.hxx>
@@ -36,10 +35,10 @@ int main(int argc, char* argv[]) {
     letters = argv[1];
     mainLetter = argv[2][0];
 
-    std::vector<std::filesystem::path> directory;
+    std::vector<std::filesystem::path> directory = {std::filesystem::current_path()};
 	nuspell::append_default_dir_paths(directory);
 	auto dictPath = nuspell::search_dirs_for_one_dict(directory, "en_US");
-    nuspell::Dictionary spellcheck;
+    auto spellcheck = nuspell::Dictionary();
     spellcheck.load_aff_dic(dictPath);
 
 
